@@ -73,6 +73,7 @@ $ajaxUtils.sendGetRequest(
     homeHtml,
     function (homeHtmlresponse) {
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
+      console.log(chosenCategoryShortName);
       var chosenCategoryShortNameString = "'" + chosenCategoryShortName+"'"
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlresponse, "randomCategoryShortName", chosenCategoryShortNameString);
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage); 
