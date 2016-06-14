@@ -78,7 +78,7 @@ $ajaxUtils.sendGetRequest(
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlresponse, "randomCategoryShortName", chosenCategoryShortNameString);
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage); 
     }, false);
-  }, false);
+  }, true);
 });
 
 // Given array of category objects, returns a random category object.
